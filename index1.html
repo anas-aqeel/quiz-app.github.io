@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style1.css">
+    <script src="https://kit.fontawesome.com/b5131f782b.js" crossorigin="anonymous"></script>
+</head>
+<body onload="nextQuestion()">
+    <!-- quiz page -->
+<article class="quiz" id="quiz">
+<div class="main">
+    <div class="head">
+        <div class="heading">
+            <h4>Quiz Application</h4>
+        </div>
+        <div class="timer">0<span id="timerm">2</span> : <span id="timers">00</span></div>
+    </div>
+        <p class="num">Question <b><span id="span">1</span></b> of <b>10</b></p>
+    <div class="body">
+        <h3 class="question" id="question">Q1 CPU stands for ?</h3>
+        <div class="opt"><input class="radio" type="radio" value="" onclick="check(this)" name="opt"><p class="option"></p></div>
+        <div class="opt"><input class="radio" type="radio" value="" onclick="check(this)" name="opt"><p class="option"></p></div>
+        <div class="opt"><input class="radio" type="radio" value="" onclick="check(this)" name="opt"><p class="option"></p></div>
+        <div class="opt"><input class="radio" type="radio" value="" onclick="check(this)" name="opt"><p class="option"></p></div>
+    </div>
+    <div class="footer">
+        <button class="sumbit" id="" onclick="nextQuestion()">Sumbit</button>
+    </div>
+</div>
+   
+   
+</article>
+    <!-- quiz page ends -->
+<div class="container dspn" id="container">
+    <div class="main1">
+        <div class="sub">
+              <i class="fas fa-4x award fa-trophy"></i><br>
+              <p class="score"></p> CONRATULATIONS!<br>
+              Your Score is: <b><span id="counterScore">12</span></b></p><br>
+              <div class="start_btn"><button onclick="start()">Go Back</button>
+         </div> 
+      </div>
+</div>      
+    <script src="js/app1.js"></script>
+</body>
+</html>
